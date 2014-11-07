@@ -1,0 +1,9 @@
+ToggleExclude
+==========
+
+ToggleExclude is a plugin that lets you easily exclude file / folder patterns.
+
+It's useful to help you browse / search with and without seeing your dependencies.
+
+For more information:
+https://github.com/henvic/ToggleExclude

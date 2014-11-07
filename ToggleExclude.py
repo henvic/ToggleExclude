@@ -58,6 +58,13 @@ def update_state(enable=None):
     return update(diff(files, cond_files), diff(folders, cond_folders))
 
 
+def toggle():
+    p_settings = sublime.load_settings(PLUGIN_SETTINGS)
+
+    state = bool(p_settings.get(ENABLED_KEY, False))
+
+    update_state(not state)
+
 def plugin_loaded():
     p_settings = sublime.load_settings(PLUGIN_SETTINGS)
     p_settings.add_on_change('toggleexclude-reload', update_state)
@@ -81,4 +88,7 @@ class ToggleExcludeCommand(sublime_plugin.ApplicationCommand):
         return True
 
     def run(self, enable=None):
+        if enable is None:
+            return toggle()
+
         update_state(enable)

@@ -17,6 +17,20 @@ Using Sublime Package Control
 
 ![clip](http://cl.ly/YPer/toggle-exclude.gif)
 
+## Adding a shortcut
+
+1. Open the Sublime Text menu
+2. Select Preferences
+3. Select Keys Bindings - User
+
+Add a tuple where the command key is `toggle_exclude`.
+
+```json
+[{"keys": ["ctrl+shift+t"], "command": "toggle_exclude"}]
+```
+
+If you're not familiar with Sublime keymaps read [Customizing Sublime Text Key Bindings](http://docs.sublimetext.info/en/latest/customization/key_bindings.html) and [Key Bindings](http://docs.sublimetext.info/en/latest/reference/key_bindings.html)
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 

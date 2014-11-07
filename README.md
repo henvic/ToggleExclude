@@ -15,6 +15,8 @@ Using Sublime Package Control
 1. Open the Sublime Text command palette
 2. Type ToggleExclude to see the available options
 
+![clip](http://cl.ly/YPer/toggle-exclude.gif)
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 

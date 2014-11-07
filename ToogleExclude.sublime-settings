@@ -1,0 +1,13 @@
+{
+    "conditional_folder_exclude_patterns": [
+        "build",
+        "bower_components",
+        "node_modules"
+    ],
+
+    "conditional_file_exclude_patterns": [
+        "*.min.js",
+        "*.min.css",
+        "npm-debug.log"
+    ]
+}

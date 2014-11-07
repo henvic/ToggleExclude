@@ -1,0 +1,30 @@
+[
+    {
+        "caption": "ToggleExclude: Conditional File / Folder Patterns: Enable",
+        "command": "toggle_exclude",
+        "args": {
+            "enable": true
+        }
+    },
+    {
+        "caption": "ToggleExclude: Conditional File / Folder Patterns: Disable",
+        "command": "toggle_exclude",
+        "args": {
+            "enable": false
+        }
+    },
+    {
+        "caption": "ToggleExclude: Conditional Patterns: Settings – Default",
+        "command": "open_file",
+        "args": {
+            "file": "${packages}/ToggleExclude/ToggleExclude.sublime-settings"
+        }
+    },
+    {
+        "caption": "ToggleExclude: Conditional Patterns: Settings – User",
+        "command": "open_file",
+        "args": {
+            "file": "${packages}/User/ToggleExclude.sublime-settings"
+        }
+    }
+]

@@ -65,6 +65,7 @@ def toggle():
 
     update_state(not state)
 
+
 def plugin_loaded():
     p_settings = sublime.load_settings(PLUGIN_SETTINGS)
     p_settings.add_on_change('toggleexclude-reload', update_state)

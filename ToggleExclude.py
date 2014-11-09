@@ -80,13 +80,7 @@ class ToggleExcludeCommand(sublime_plugin.ApplicationCommand):
     def is_enabled(self, enable=None):
         state = bool(load_settings(PLUGIN_SETTINGS).get(ENABLED_KEY, False))
 
-        if enable is True and state is True:
-            return False
-
-        if enable is False and state is False:
-            return False
-
-        return True
+        return enable ^ state
 
     def run(self, enable=None):
         if enable is None:
